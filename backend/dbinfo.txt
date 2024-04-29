@@ -1,0 +1,27 @@
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int         | NO   | PRI | NULL    | auto_increment |
+| username | varchar(20) | YES  |     | NULL    |                |
+| password | varchar(60) | YES  |     | NULL    |                |
+| isonline | tinyint(1)  | YES  |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+
++------------+------------+------+-----+---------+----------------+
+| Field      | Type       | Null | Key | Default | Extra          |
++------------+------------+------+-----+---------+----------------+
+| id         | int        | NO   | PRI | NULL    | auto_increment |
+| sender     | int        | YES  | MUL | NULL    |                |
+| reciever   | int        | YES  | MUL | NULL    |                |
+| time       | datetime   | YES  |     | NULL    |                |
+| isrecieved | tinyint(1) | YES  |     | NULL    |                |
+| isreaden   | tinyint(1) | YES  |     | NULL    |                |
+| message    | text       | YES  |     | NULL    |                |
++------------+------------+------+-----+---------+----------------+
+
++------------+------+------+-----+---------+-------+
+| Field      | Type | Null | Key | Default | Extra |
++------------+------+------+-----+---------+-------+
+| owner_id   | int  | YES  | MUL | NULL    |       |
+| contact_id | int  | YES  | MUL | NULL    |       |
++------------+------+------+-----+---------+-------+

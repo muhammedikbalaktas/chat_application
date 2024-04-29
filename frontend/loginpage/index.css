@@ -1,0 +1,77 @@
+
+
+  #base_div{
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+  }
+  #img_div{
+    background-color: #C6EBC5;
+    height: 100%;
+    width: 50%; 
+  }
+  #form_div {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    width: 50%;
+    margin: 0 auto; 
+    
+}
+  #login_img{
+    height: 100%;
+  }
+
+  #username, #password{
+    margin: 20px;
+    height: 50px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  #btn_submit{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #074173;
+  }
+  #btn_submit:hover{
+    background-color: #1679AB;
+  }
+
+/* HTML: <div class="loader"></div> */
+#loader {
+  width: 30px;
+  aspect-ratio: .577;
+  color: #000;
+  display: grid;
+  background:
+    linear-gradient(currentColor 0 0) top   /100% 1px,
+    linear-gradient(currentColor 0 0) bottom/100% 1px,
+    linear-gradient(to bottom right, #0000 calc(50% - 2px),currentColor calc(50% - 1px),#0000 50%) top/100% calc(100% + 2px),
+    linear-gradient(to bottom left , #0000 calc(50% - 2px),currentColor calc(50% - 1px),#0000 50%) top/100% calc(100% + 2px); 
+  background-repeat: no-repeat;
+  animation: l17 4s infinite linear;
+  margin: 10px;
+  display: none;
+}
+#loader::before,
+#loader::after {
+  content: "";
+  grid-area: 1/1;
+  background: inherit;
+  border:inherit;
+  animation: inherit;
+}
+#loader::after {
+  animation-duration: 2s;
+}
+@keyframes l17 {
+  100% {transform: rotate(1turn)}
+}
+
+  

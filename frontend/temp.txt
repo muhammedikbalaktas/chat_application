@@ -1,0 +1,7 @@
+create table users(id int auto_increment, username varchar(20), password varchar(60), primary key(id))
+
+create table messages(id int auto_increment, sender int, reciever int, time datetime, isrecieved bool, isreaden bool, 
+foreign key(sender) references users(id),
+foreign key(reciever) references users(id),
+primary key(id)
+);

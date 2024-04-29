@@ -1,0 +1,51 @@
+.bubble_left {
+    position: relative;
+    background: #D3F6DB;
+    border-radius: .4em;
+    width: 300px;
+    display: inline-block;
+    margin-left:20px ;
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.bubble_left:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #D3F6DB;
+    border-left: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.bubble_right {
+	position: relative;
+	background: #D3F6DB;
+	border-radius: .4em;
+    display: inline-block;
+    width: 300px;
+    margin-right:20px ;
+    padding: 1%;
+    margin-top: 10px;
+    align-self:last baseline;
+}
+
+.bubble_right:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-left-color: #D3F6DB;
+	border-right: 0;
+	margin-top: -10px;
+	margin-right: -10px;
+
+}

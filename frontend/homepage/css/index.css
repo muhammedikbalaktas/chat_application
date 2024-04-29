@@ -1,0 +1,62 @@
+#base_div{
+
+    display: flex;
+    height: 100%;
+    
+}
+#left_div{
+    border: 1px solid black;
+    height: 100%;
+    width: 30%;
+}
+
+
+#users_div{
+    
+    height: 95%;
+    width: 100%;
+    overflow-y: auto;
+
+}
+#add_user_div{
+    height: 5%;
+    display: flex;
+    
+    
+}
+#add_user_input{
+    width: 90%;
+    font-size: large;
+}
+#add_user_img{
+    width: 10%;
+}
+#chat_div{
+    
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#bubbles_div{
+    
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+#send_div{
+    height: 5%;
+    display: flex; 
+    
+}
+#text_input{
+    height: 100%;
+    width: 98%;
+    font-size: 20px;
+}
+
+
